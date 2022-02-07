@@ -9,11 +9,12 @@
 
 
 header {
+    border-radius: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 1.1%;
-    background-color: #24252a;
+    background-color: black;
+    margin-bottom: 10px;
   }
 
   @font-face{
@@ -22,24 +23,14 @@ header {
   }
 
 h1{
-    font-family: 'Quitos';
+    color: white;
+    text-align: center;
 }
 
 body{
     background-color: black;
 }
 
-/* .championsleague img {
-    height: 380px;
-}
-
-.news img {
-    height: 380px;
-}
-
-.weather img {
-    height: 380px;
-} */
 
 .patchnotes img {
     height: 380px;
@@ -64,6 +55,7 @@ body{
     width: 750px;
     background-image: url(Pictures/weather.png);
     background-repeat: no-repeat;
+    -webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transform: scale(1);
 }
 .item-2 {
     border-radius: 10px;
@@ -92,3 +84,34 @@ body{
     background-image: url(Pictures/patchnotes.jpg);
     background-repeat: no-repeat;
 }
+div {
+    display: inline-block;
+    border: 1px solid black;
+    overflow: hidden;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+
+.item-1:hover {
+    opacity: .5;
+}
+
+.item-2:hover {
+    opacity: .5;
+}
+
+.item-3:hover {
+    opacity: .5;
+}
+
+.item-4:hover {
+    opacity: .5;
+}
+
+.item-5:hover {
+    opacity: .5;
+}
+
+
