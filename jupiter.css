@@ -1,0 +1,33 @@
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 1.1%;
+    background-color: #24252a;
+  }
+
+  @font-face{
+    font-family: 'Quitos';
+    src: url(Schriftarten/quitos/Quitos.ttf)
+  }
+
+h1{
+    font-family: 'Quitos';
+}
+
+.championsleague {
+    height: 200px;
+    width: 200px;
+    margin-top: 100px;
+
+}
