@@ -25,9 +25,70 @@ h1{
     font-family: 'Quitos';
 }
 
-.championsleague {
-    height: 200px;
-    width: 200px;
-    margin-top: 100px;
+body{
+    background-color: black;
+}
 
+/* .championsleague img {
+    height: 380px;
+}
+
+.news img {
+    height: 380px;
+}
+
+.weather img {
+    height: 380px;
+} */
+
+.patchnotes img {
+    height: 380px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 400px 400px;
+    gap: 7px;
+    grid-template-areas:
+    "eins zwei"
+    "drei vier"
+    ;
+    justify-content: center;
+}
+.item-1 {
+    border-radius: 10px;
+    grid-area: eins;
+    position: relative;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/weather.png);
+    background-repeat: no-repeat;
+}
+.item-2 {
+    border-radius: 10px;
+    grid-area: zwei;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/news.jpg);
+    background-repeat: no-repeat;
+}
+.item-3 {
+    border-radius: 10px;
+    grid-area: drei;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/Championsleague.jpg);
+    background-repeat: no-repeat;
+}
+.item-4 {
+    border-radius: 10px;
+    grid-area: vier;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/patchnotes.jpg);
+    background-repeat: no-repeat;
 }
