@@ -18,11 +18,12 @@ header {
   }
 
   @font-face{
-    font-family: 'Quitos';
-    src: url(Schriftarten/quitos/Quitos.ttf)
+    font-family: 'diaspora';
+    src: url(Schriftarten/diaspora/Diaspora\ Demo.otf)
   }
 
 h1{
+    font-family: 'diaspora';
     color: white;
     text-align: center;
 }
@@ -30,7 +31,6 @@ h1{
 body{
     background-color: black;
 }
-
 
 .patchnotes img {
     height: 380px;
@@ -46,6 +46,44 @@ body{
     ;
     justify-content: center;
 }
+
+.text_item1 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+}
+
+.text_item2 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+} 
+
+.text_item3 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+}
+
+.text_item4 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+}
+
+
 
 
 .item-1 {
@@ -95,12 +133,21 @@ body{
     transition: all .2s ease;
     opacity: .5;
 }
+.item-1:hover .text_item1{
+    display:block;
+}
+
+
 
 .item-2:hover {
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     transition: all .2s ease;
     opacity: .5;
+}
+
+.item-2:hover .text_item2{
+    display:block;
 }
 
 .item-3:hover {
@@ -110,11 +157,16 @@ body{
     opacity: .5;
 }
 
+.item-3:hover .text_item3{
+    display:block;
+}
+
+
 .item-4:hover {-webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     transition: all .2s ease;
     opacity: .5;
 }
-
-
-
+.item-4:hover .text_item4{
+    display:block;
+}
