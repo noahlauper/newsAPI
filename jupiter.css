@@ -9,25 +9,164 @@
 
 
 header {
+    border-radius: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px 1.1%;
-    background-color: #24252a;
+    background-color: black;
+    margin-bottom: 10px;
   }
 
   @font-face{
-    font-family: 'Quitos';
-    src: url(Schriftarten/quitos/Quitos.ttf)
+    font-family: 'diaspora';
+    src: url(Schriftarten/diaspora/Diaspora\ Demo.otf)
   }
 
 h1{
-    font-family: 'Quitos';
+    font-family: 'diaspora';
+    color: white;
+    text-align: center;
 }
 
-.championsleague {
-    height: 200px;
-    width: 200px;
-    margin-top: 100px;
+body{
+    background-color: black;
+}
 
+.patchnotes img {
+    height: 380px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 400px 400px;
+    gap: 7px;
+    grid-template-areas:
+    "eins zwei"
+    "drei vier"
+    ;
+    justify-content: center;
+}
+
+.text_item1 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+}
+
+.text_item2 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+} 
+
+.text_item3 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+}
+
+.text_item4 {
+    font-family: 'diaspora';
+    font-size: 100px;
+    margin-top: 30%;
+    text-align: center;
+    color: white;
+    display:none;
+}
+
+
+
+
+.item-1 {
+    border-radius: 10px;
+    grid-area: eins;
+    position: relative;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/weather.png);
+    background-repeat: no-repeat;
+    -webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);-o-transform: scale(1);transform: scale(1);
+}
+.item-2 {
+    border-radius: 10px;
+    grid-area: zwei;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/news.jpg);
+    background-repeat: no-repeat;
+}
+.item-3 {
+    border-radius: 10px;
+    grid-area: drei;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/Championsleague.jpg);
+    background-repeat: no-repeat;
+}
+.item-4 {
+    border-radius: 10px;
+    grid-area: vier;
+    background-size: cover;
+    height: 400px;
+    width: 750px;
+    background-image: url(Pictures/patchnotes.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+.item-1:hover {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: .5;
+}
+.item-1:hover .text_item1{
+    display:block;
+}
+
+
+
+.item-2:hover {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: .5;
+}
+
+.item-2:hover .text_item2{
+    display:block;
+}
+
+.item-3:hover {
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: .5;
+}
+
+.item-3:hover .text_item3{
+    display:block;
+}
+
+
+.item-4:hover {-webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+    opacity: .5;
+}
+.item-4:hover .text_item4{
+    display:block;
 }
