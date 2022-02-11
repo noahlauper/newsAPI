@@ -34,4 +34,3 @@ function fetchWinner(winnerId) {
 //CL 2001
 //2012
 //PL 2021
-
