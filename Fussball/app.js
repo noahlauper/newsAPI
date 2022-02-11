@@ -1,4 +1,4 @@
-fetch('https://api.football-data.org/v2/teams/86/matches?status=SCHEDULED', {
+fetch('https://api.football-data.org/v2/competitions/2000/', {
     headers: { 'X-Auth-Token': '4d111a4bf7654a24aa3caac1df58401d' },
     method: 'GET'
 })
@@ -8,21 +8,22 @@ fetch('https://api.football-data.org/v2/teams/86/matches?status=SCHEDULED', {
 })
 
 .then(data => {
-    const html = data.matches
-    .map (matches =>{
+    console.log(data.seasons)
+    const html = data.seasons
+    .map (seasons =>{
         return `
-        <div class ="Team">
-            <p>
-                Home Team: ${JSON.stringify(matches.homeTeam.name)}</br>
-                Away Team: ${JSON.stringify(matches.awayTeam.name)} 
-            </p>
-        </div> 
+        <div class ="data">
+        <p>
+            Winner: ${JSON.stringify(seasons.winner.name)}</br>
+            Date: ${JSON.stringify(seasons.endDate)}
+        </p>
+        </div>
         `
     });
+    console.log(html)
     document.querySelector('#app').innerHTML= html
     .join("")
 })
-
 
 .catch(function (err) {
     console.log('error: ' + err);
