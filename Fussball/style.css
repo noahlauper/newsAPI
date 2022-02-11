@@ -1,9 +1,19 @@
-.T.data {
+.data {
     background-color: rgb(77, 77, 255);
     padding: 1rem;
     margin-bottom: 1rem;
     width: 500px;
     display: flex;
-    justify-content: center;
-    align-content: center   ;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+#container {
+    display: flex;
+    background-color: black;
 }
