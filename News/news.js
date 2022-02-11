@@ -39,6 +39,17 @@ function requestDetails(info)
     }
     else
     {
-        infoTxt.innerText = "Success";
+
+        for (let i = 0; i < 10; i++)
+        {
+            
+            const title = info.articles[i].title;
+            const author = info.articles[i].author;
+            const description = info.articles[i].description;
+
+            infoTxt.innerText += "Title: " + title + "\n\nAuthor: " + author + "\n\nDescription: " + description;
+            infoTxt.innerText += "\n\n\nNEXT NEWS:\n\n\n";
+        }
+        
     }
 }
