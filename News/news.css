@@ -10,7 +10,8 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #43AFFC;
+  background-image: url(/Pictures/news.jpg);
+  background-size: cover;
 }
 
 ::selection{

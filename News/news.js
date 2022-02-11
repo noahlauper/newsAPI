@@ -20,7 +20,7 @@ arrowBack.addEventListener("click", () => {
 
 function RequestNews(source, sortBy, apiKey)
 {
-    infoTxt.innerText = "Getting weather details...";
+    infoTxt.innerText = "Getting news...";
     infoTxt.classList.add("pending");
     let mainUrl = `https://newsapi.org/v1/articles?source=${source}&sortBy=${sortBy}&apiKey=${apiKey}`;
 
